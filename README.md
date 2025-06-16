@@ -5,14 +5,14 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
 
 ## 📋 Daftar Isi
 - [Panduan Installasi Aplikasi](#panduan-installasi-aplikasi)
-- [Panduan Menggunakan Aplikasi](#panduan-menggunakan-aplikasi)
+- [Panduan Menggunakan Aplikasi](#Panduan-Menggunakan-Aplikasi)
 - [Dokumentasi Interface](#dokumentasi-interface)
 
 ---
 
 ## 🚀 Panduan Installasi Aplikasi
 
-### 3.1 Persyaratan Sistem
+### A Persyaratan Sistem
 
 **Software yang dibutuhkan:**
 - **Python 3.7** atau lebih baru
@@ -22,13 +22,13 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
 > - Cek versi Java: `java -version`
 > - Download Java 17+: [Oracle Java Downloads](https://www.oracle.com/java/technologies/downloads/)
 
-### 3.2 Download Apache Jena Fuseki
+### B Download Apache Jena Fuseki
 
 1. Kunjungi website resmi Apache Jena: [https://jena.apache.org/download/](https://jena.apache.org/download/)
 2. Pilih **Apache Jena Fuseki** dari daftar download
 3. Download file ZIP/TAR sesuai sistem operasi Anda
 
-### 3.3 Ekstrak dan Setup
+### C Ekstrak dan Setup
 
 1. **Ekstrak file** yang telah didownload ke direktori yang diinginkan
    ```
@@ -36,7 +36,7 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
    ```
 2. **Tambahkan Apache Jena ke PATH** (opsional, untuk memudahkan akses)
 
-### 3.4 Menjalankan Fuseki Server
+### D Menjalankan Fuseki Server
 
 1. **Buka Command Prompt (CMD)**
 2. **Navigasi ke folder Jena Fuseki:**
@@ -56,7 +56,7 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
    http://localhost:3030
    ```
 
-### 3.5 Membuat Dataset
+### E Membuat Dataset
 
 1. Di halaman Apache Jena Fuseki, klik **"New Dataset"**
 2. **Isi konfigurasi dataset:**
@@ -65,7 +65,7 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
 3. Klik **"Create Dataset"**
 4. Dataset berhasil dibuat - Anda akan melihat endpoint dataset yang baru dibuat
 
-### 3.6 Upload Data TTL
+### F Upload Data TTL
 
 1. **Klik nama dataset** yang telah dibuat (misalnya "kawali")
 2. Pilih **"Add Data"**
@@ -73,7 +73,7 @@ Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apach
 4. **Masukkan file TTL** yang ingin diuji coba untuk query SPARQL
 5. **Upload file** - Data sekarang siap untuk diquery melalui SPARQL endpoint
 
-### 3.7 Library Python yang Digunakan
+### G Library Python yang Digunakan
 
 ```python
 streamlit     # Framework untuk membuat web application
@@ -94,7 +94,7 @@ pip install streamlit pandas requests
 
 ## 🎯 Panduan Menggunakan Aplikasi
 
-### 4.1 Persiapan
+### A Persiapan
 
 1. **Pastikan Fuseki server berjalan:**
    ```cmd
@@ -112,7 +112,7 @@ pip install streamlit pandas requests
 3. **Akses Aplikasi:**
    Buka browser dan akses: `http://localhost:8501`
 
-### 4.2 Interface Utama
+### B Interface Utama
 
 #### Header dan Status Koneksi
 - **Status Koneksi**: Indikator hijau (✅) menunjukkan koneksi ke Fuseki berhasil
@@ -123,7 +123,7 @@ pip install streamlit pandas requests
 - **Total Baris**: Jumlah baris naskah dalam database
 - **Detail Prasasti**: Breakdown jumlah baris per prasasti
 
-### 4.3 Fitur Pencarian
+### C Fitur Pencarian
 
 #### Jenis Pencarian
 
@@ -143,7 +143,7 @@ pip install streamlit pandas requests
    - Mencari dalam aksara Sunda asli
    - Input menggunakan karakter aksara Sunda
 
-### 4.4 Tips Pencarian Efektif
+### D Tips Pencarian Efektif
 
 - ✅ Gunakan kata kunci yang spesifik
 - ✅ Pencarian tidak case-sensitive
@@ -154,11 +154,11 @@ pip install streamlit pandas requests
 
 ## 📱 Dokumentasi Interface
 
-### 5.1 Menu Utama
+### A Menu Utama
 - <img width="475" alt="image" src="https://github.com/user-attachments/assets/8ae0d9ec-5eab-4440-96cf-d389be037c1a" />
 
 
-### 5.2 Fitur Pencarian
+### B Fitur Pencarian
 
 #### Pencarian "Semua"
 - Mencari di semua field (transliterasi, terjemahan, aksara)
@@ -193,7 +193,7 @@ pip install streamlit pandas requests
 
 
 
-### 5.3 Tampilan Hasil
+### C Tampilan Hasil
 
 Setiap hasil pencarian menampilkan:
 - **Aksara Sunda**: Teks dalam script asli
@@ -201,7 +201,7 @@ Setiap hasil pencarian menampilkan:
 - **Terjemahan Indonesia**: Makna dalam Bahasa Indonesia
 - **Metadata**: Informasi ID prasasti, baris, dan sumber
 
-### 5.4 Fitur Export
+### D Fitur Export
 
 Hasil pencarian dapat didownload dalam format:
 - **CSV (Excel Compatible)**: Format UTF-8 BOM untuk Excel
