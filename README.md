@@ -4,9 +4,9 @@
 Portal pencarian semantik untuk eksplorasi prasasti kuno Sunda menggunakan Apache Jena Fuseki SPARQL Endpoint.
 
 ## 📋 Daftar Isi
-- [Panduan Installasi Aplikasi](#panduan-installasi-aplikasi)
-- [Panduan Menggunakan Aplikasi](#Panduan-Menggunakan-Aplikasi)
-- [Dokumentasi Interface](#dokumentasi-interface)
+- [Panduan Installasi Aplikasi](#-panduan-installasi-aplikasi)
+- [Panduan Menggunakan Aplikasi](#-Panduan-Menggunakan-Aplikasi)
+- [Dokumentasi Interface](#-dokumentasi-interface)
 
 ---
 
