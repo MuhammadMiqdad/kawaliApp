@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Konfigurasi SPARQL endpoint
-FUSEKI_ENDPOINT = "http://localhost:3030/kawali/sparql"
+FUSEKI_ENDPOINT = "https://e028-36-65-243-185.ngrok-free.app/kawali/sparql"
 
 class PrasastiSearchEngine:
     def __init__(self):
